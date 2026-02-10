@@ -14,11 +14,16 @@ public class Ejercicio1 {
         for(int i=0; i< a.length; i++){
             if (a[i]%2 == 0){
                 sumaPares += a[i];
-
             }else{
                 sumaImpares += a[i];
             }
         }
-        System.out.println("Suma Pares = " + sumaPares + "Suma Impares = " + sumaImpares);
+
+        System.out.println(" Suma Pares = " + sumaPares + " Suma Impares = " + sumaImpares);
+
+        //Forma 2 -> Declarando el arreglo y definiendo el tamaño
+        int[] b = new int[10];
+
+        
     }
 }
