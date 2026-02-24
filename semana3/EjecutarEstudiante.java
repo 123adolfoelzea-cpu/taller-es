@@ -1,4 +1,4 @@
-public class EjecutarEstudiante {
+                     public class EjecutarEstudiante {
     public static void main(String[] args) {
        //Creacion de La Clase Estudiante
       Estudiante objE = new Estudiante();
@@ -43,7 +43,7 @@ public class EjecutarEstudiante {
         double suma = 0;
         int contador = 0;
 
-        for ( int i = 0; 9 < est.length; i++){
+        for ( int i = 0; i < est.length; i++){
 
             if (est[i].getSemestre () == semestre &&
                est[i].getPrograma().equalsIgnoraCase(programa)) {
