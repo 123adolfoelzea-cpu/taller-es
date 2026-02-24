@@ -21,7 +21,11 @@ public class EjecutarEstudiante {
        for ( int i = 0; i < est.length; i++){
            sumaNota += est[i].getNotaPromedio();
        }
-       System.out.println(sumaNota / est.length);
+       System.out.println("Promedio general: "(sumaNota / est.length));
+
+        //Nuevo metodo
+        doublre promedioFiltrado = calcularPromedioPorSemestreYPrograma(est, 3, "Ingenieria");
+        System.ot.println("Promedio filtrado:" + promedioFiltrado);
 
        //Almacenr el Arreglo de edades de la edad de lños Estudiantes
        int[] edades = new int[est.length];
@@ -32,7 +36,25 @@ public class EjecutarEstudiante {
        //Uso del metodo CalcularEdadPromedio
        System.out.println(objE.calcularEdadPromedio(edades));
 
-       
+    }
+    //Nuevo metodo
+    public static double calcularPromedioPorSemestreYPrograma(Estudiante[] est,int semestre, String programa){
 
+        double suma = 0;
+        int contador = 0;
+
+        for ( int i = 0; 9 < est.length; i++){
+
+            if (est[i].getSemestre () == semestre &&
+               est[i].getPrograma().equalsIgnoraCase(programa)) {
+
+               suma += est[i].getNotaPromedio();
+                contador++;
+               }
+        }
+        if ( contador == 0){
+            return 0; 
+        }
+        return suma / contador;
     }
 }
